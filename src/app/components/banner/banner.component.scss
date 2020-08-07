@@ -1,0 +1,90 @@
+.container {
+  max-height: min-content;
+  border-radius: 8px;
+  margin: 20px 0 40px 0;
+
+  .plan {
+    display: flex;
+    margin-bottom: 60px;
+
+    .background {
+      z-index: -1;
+      position: absolute;
+      width: 98%;
+      height: 200px;
+      border-radius: 19px;
+    }
+
+    .description {
+      width: 25%;
+      text-align: center;
+      padding: 35px 0px 0px 260px;
+      font-size: 17pt;
+      color: white;
+      font-family: Arial Black, Gadget, sans-serif
+    }
+
+    .btn__container {
+      padding: 66px 0px 0px 375px;
+
+      .button {
+        width: 275px;
+        border-radius: 12px;
+        background-color: #4CAF50;
+        border: none;
+        outline:none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+      }
+    }
+  }
+
+  .cellphone {
+    border-radius: 19px;
+    display: flex;
+    margin-top: 17px;
+    background-color: rgb(249,249,249);
+    background-image: url(../../../assets/imgs/bannertest.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+
+    .product__img {
+      height: 300px;
+
+      .cellphone__img {
+        height: 93%;
+        padding: 10px 0px 0px 391px;
+      }
+    }
+
+    .txt__container {
+      height: max-content;
+      height: max-content;
+      padding: 91px 0px 0px 150px;
+
+      .cellphone__name {
+        width: max-content;
+        margin: 0 auto;
+        font-family: Arial Black, Gadget, sans-serif;
+        font-size: 31pt;
+        color: black;
+      }
+
+      .cellphone__description {
+        width: 500px;
+        padding: 16px 0 0 0;
+        margin: 0 auto;
+        text-align: center;
+        font-family: 'Lucida Console', Monaco, monospace;
+        font-size: 14pt;
+      }
+    }
+  }
+}
