@@ -3,7 +3,7 @@ import { HomeComponent } from './home/home.component';
 import { BannerComponent } from './banner/banner.component';
 
 @NgModule({
-  declarations: [BannerComponent],
+  declarations: [HomeComponent, BannerComponent],
   imports: [],
   exports: [HomeComponent, BannerComponent]})
 
