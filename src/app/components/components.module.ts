@@ -3,8 +3,8 @@ import { HomeComponent } from './home/home.component';
 import { BannerComponent } from './banner/banner.component';
 
 @NgModule({
-  declarations: [HomeComponent, BannerComponent],
-  imports: [],
+  declarations: [BannerComponent],
+  imports: [HomeComponent],
   exports: [HomeComponent, BannerComponent]})
 
 export class ComponentsModule {}
