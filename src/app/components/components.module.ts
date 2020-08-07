@@ -4,7 +4,7 @@ import { BannerComponent } from './banner/banner.component';
 
 @NgModule({
   declarations: [],
-  imports: [HomeComponent, BannerComponent],
-  exports: [HomeComponent, BannerComponent]})
+  imports: [],
+  exports: []})
 
 export class ComponentsModule {}
