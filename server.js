@@ -12,5 +12,3 @@ app.get('*', function(req,res) {
   // Replace the '/dist/<to_your_project_name>/index.html'
     res.sendFile(path.join(__dirname + '/dist/kunder-exam-frontend/app.component.html'));
 });
-
-app.listen(8080);
