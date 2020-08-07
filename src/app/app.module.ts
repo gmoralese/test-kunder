@@ -4,6 +4,7 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './components/home/home.component';
 import { BannerService } from './services/banner.services';
 import { HttpClientModule } from '@angular/common/http';
+import { ComponentsModule } from './components/components.module';
 
 @NgModule({
   declarations: [
@@ -11,7 +12,8 @@ import { HttpClientModule } from '@angular/common/http';
   ],
   imports: [
     BrowserModule,
-    HttpClientModule
+    HttpClientModule,
+    ComponentsModule
   ],
   providers: [BannerService],
   bootstrap: [AppComponent]
