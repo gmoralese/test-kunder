@@ -1,26 +1,30 @@
 <div class="container">
-  <div class="plan" *ngIf="showBannerBoolean">
-    <img class="background" [src]='bannerInfo ? bannerInfo.backgroundImg : null' />
-    <div class="description">
-      {{ bannerInfo ? bannerInfo.productDescription : 'Informacion no disponible' }}
-    </div>
-    <div class="btn__container">
-      <a href="{{ bannerInfo.link }}">
-        <button class="button">Contratar</button>
-      </a>
-    </div>
-  </div>
-  <div class="cellphone" *ngIf="!showBannerBoolean">
-    <div class="product__img">
-      <img class="cellphone__img" [src]='bannerInfo ? bannerInfo.productImg : null' />
-    </div>
-    <div class="txt__container">
-      <div class="cellphone__name">
-        {{ bannerInfo ? bannerInfo.productName : 'No definido' }}
+  <ng-container *ngIf="showBannerBoolean">
+    <div class="plan">
+      <img class="background" [src]='bannerInfo ? bannerInfo.backgroundImg : null' />
+      <div class="description">
+        {{ bannerInfo ? bannerInfo.productDescription : 'Informacion no disponible' }}
       </div>
-      <div class="cellphone__description">
-        {{ bannerInfo ? bannerInfo.productDescription : 'No definido' }} 
+      <div class="btn__container">
+        <a href="{{ bannerInfo.link }}">
+          <button class="button">Contratar</button>
+        </a>
       </div>
     </div>
-  </div>
+  </ng-container>
+  <ng-container *ngIf="!showBannerBoolean">
+    <div class="cellphone">
+      <div class="product__img">
+        <img class="cellphone__img" [src]='bannerInfo ? bannerInfo.productImg : null' />
+      </div>
+      <div class="txt__container">
+        <div class="cellphone__name">
+          {{ bannerInfo ? bannerInfo.productName : 'No definido' }}
+        </div>
+        <div class="cellphone__description">
+          {{ bannerInfo ? bannerInfo.productDescription : 'No definido' }}
+        </div>
+      </div>
+    </div>
+  </ng-container>
 </div>
